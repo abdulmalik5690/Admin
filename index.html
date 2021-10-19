@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Block</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand navbar-dark bg-dark">
+		<div class="container">
+			<div class="row">
+				<div class="navbar-brand">
+					<h3>Admin Panal</h3>
+				</div>
+				<ul class="navbar-nav" style="margin-left: 800px;">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Profile</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#" class="dropdown-item">Signup <i class="fas fa-user-lock"></i></a>
+							</li>
+							<li>
+								<a href="#" class="dropdown-item">Login <i class="fas fa-user-check"></i></a>
+							</li>
+							<li>
+								<a href="#" class="dropdown-item">Setting <i class="fas fa-user-cog"></i></a>
+							</li> 
+							<li class="dropdown-divider"></li>
+							<li>
+								<a href="#" class="dropdown-item">Logout <i class="fas fa-user-times"></i></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 mt-3" >
+				<nav class="navbar bg-light" >
+					<ul class="navbar-nav " style="height: 100vh;">
+						<li>
+							<a href=""><span><i class="fas fa-tachometer-alt"></i></span> Dashboard</a>
+						</li>
+						<li class="mt-2">
+							<a href="#hide" data-toggle="collapse"><span><i class="fas fa-plus"></i></span> New</a>
+							<ul class="list-unstyled collapse mt-1" id="hide">
+								<li class="ml-4 mt-2">
+									<a href="write_post.html"><span><i class="fas fa-pencil-alt"></i></span> Write Post</a>
+								<li class="ml-4 mt-2">	
+									<a href="write_category.html"><span><i class="far fa-edit"></i></span> Write Category</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mt-2">
+							<a href="post.html"><span><i class="fas fa-list"></i></span> Posts</a>
+						</li>
+						<li class="mt-2">
+							<a href="categories.html"><span><i class="fa fa-tasks"></i></span> Categories</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-9 mt-3">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card badge-info">
+							<div class="card-header">
+								<div class="row">
+									<div class="col-md-3">
+										<span><i class="fa fa-signal" style="font-size: 4.5em;"></i></span>
+									</div>
+									<div class="col-md-9 text-right">
+										<div style="font-size:2em;">63</div>
+										<div style="font-size:1.6em;">Post</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="badge-light">
+								<div class="card-footer">
+									<div class="row col-md-12">
+										<div class="float-left">View Post</div>
+										<div class="ml-auto"><span><i class="fas fa-arrow-alt-circle-right"></i></span></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+						<div class="card badge-danger">
+							<div class="card-header">
+								<div class="row">
+									<div class="col-md-3">
+										<span><i class="far fa-comment" style="font-size: 4.5em;"></i></span>
+									</div>
+									<div class="col-md-9 text-right">
+										<div style="font-size:2em;">44</div>
+										<div style="font-size:1.6em;">Commant</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="badge-light">
+								<div class="card-footer">
+									<div class="row col-md-12">
+										<div class="float-left">View Comment</div>
+										<div class="ml-auto"><span><i class="fas fa-arrow-alt-circle-right"></i></span></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+						<div class="card badge-secondary">
+							<div class="card-header">
+								<div class="row">
+									<div class="col-md-3">
+										<span><i class="fa fa-list" style="font-size: 4.5em;"></i></span>
+									</div>
+									<div class="col-md-9 text-right">
+										<div style="font-size:2em;">200</div>
+										<div style="font-size:1.4em;">Category</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="badge-light">
+								<div class="card-footer">
+									<div class="row col-md-12">
+										<div class="float-left">View Category</div>
+										<div class="ml-auto"><span><i class="fas fa-arrow-alt-circle-right"></i></span></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</a>
+							</div>
+						</div>
+						<div class="col-md-3">
+						<div class="card badge-success">
+							<div class="card-header">
+								<div class="row">
+									<div class="col-md-3">
+										<span><i class="fa fa-group" style="font-size: 4.5em;"></i></span>
+									</div>
+									<div class="col-md-9 text-right">
+										<div style="font-size:2em;">63</div>
+										<div style="font-size:1.6em;">Visit</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="badge-light">
+								<div class="card-footer">
+									<div class="row col-md-12">
+										<div class="float-left">View Visit</div>
+										<div class="ml-auto"><span><i class="fas fa-arrow-alt-circle-right"></i></span></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</a>
+							</div>
+						</div>
+					</div>
+					<div class="card mt-3">
+						<div class="card-header"><h3>Latest posts</h3></div>
+						<div class="card-body">
+							<table class="table table-striped">
+									<tr>
+										<th>S.No</th>
+										<th>Project</th>
+										<th>Description</th>
+										<th>Category</th>
+										<th>Date</th>
+										<th>Developer</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>App Development</td>
+										<td>I'm developer.If you want i ac ready your mobile app.</td>
+										<td>Programming</td>
+										<td>17-07-2020</td>
+										<td>Abdul Malik</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>App Development</td>
+										<td>I'm developer.If you want i ac ready your mobile app.</td>
+										<td>Programming</td>
+										<td>17-07-2020</td>
+										<td>Abdul Malik</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>App Development</td>
+										<td>I'm developer.If you want i ac ready your mobile app.</td>
+										<td>Programming</td>
+										<td>17-07-2020</td>
+										<td>Abdul Malik</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>App Development</td>
+										<td>I'm developer.If you want i ac ready your mobile app.</td>
+										<td>Programming</td>
+										<td>17-07-2020</td>
+										<td>Abdul Malik</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>App Development</td>
+										<td>I'm developer.If you want i ac ready your mobile app.</td>
+										<td>Programming</td>
+										<td>17-07-2020</td>
+										<td>Abdul Malik</td>
+									</tr>
+								
+							</table>
+							<div >
+								<ul class="pagination justify-content-center">
+									<li class="page-item"><a href="" class="page-link">&laquo;</a></li>
+									<li class="page-item active"><a href="" class="page-link">1</a></li>
+									<li class="page-item"><a href="" class="page-link">2</a></li>
+									<li class="page-item"><a href="" class="page-link">3</a></li>
+									<li class="page-item"><a href="" class="page-link">4</a></li>
+									<li class="page-item"><a href="" class="page-link">5</a></li>
+									<li class="page-item"><a href="" class="page-link">&raquo;</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
